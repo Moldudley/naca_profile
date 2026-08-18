@@ -6,7 +6,8 @@
 
 ## Inputs
 
-- **digit** (number)
+- **NACA_number** (number)
+- **Cord_length** (number)
 
 
 
