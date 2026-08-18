@@ -7,11 +7,18 @@
   "ioValues": [
     {
       "name": "NACA_number",
-      "ioValue": 10
+      "ioValue": 2408,
+      "currentEquation": "2408"
     },
     {
       "name": "Cord_length",
-      "ioValue": 10
+      "ioValue": 10,
+      "currentEquation": "10"
+    },
+    {
+      "name": "number_of_points",
+      "ioValue": 50,
+      "currentEquation": "50"
     }
   ],
   "topLevel": true,
@@ -30,8 +37,8 @@
     },
     {
       "atomType": "Code",
-      "x": 0.3538371411833626,
-      "y": 0.35279187817258884,
+      "x": 0.27299355594610425,
+      "y": 0.29949238578680204,
       "uniqueID": "id-742",
       "ioValues": [
         {
@@ -44,7 +51,7 @@
         },
         {
           "name": "nacaNumber",
-          "ioValue": 12,
+          "ioValue": 2408,
           "currentEquation": "0012"
         }
       ],
@@ -65,15 +72,36 @@
       "y": 0.27504880905896134,
       "uniqueID": "id-769",
       "name": "Cord_length"
+    },
+    {
+      "atomType": "Input",
+      "x": 0.025384615384615384,
+      "y": 0.36735650136665365,
+      "uniqueID": "id-772",
+      "name": "number_of_points"
     }
   ],
   "allConnectors": [
     {
-      "ap2Name": "chord",
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-742",
+      "ap2ID": "id-740"
+    },
+    {
+      "ap2Name": "nacaNumber",
       "ap1ID": "id-756",
       "ap2ID": "id-742"
     },
-    null
+    {
+      "ap2Name": "chord",
+      "ap1ID": "id-769",
+      "ap2ID": "id-742"
+    },
+    {
+      "ap2Name": "numPoints",
+      "ap1ID": "id-772",
+      "ap2ID": "id-742"
+    }
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
