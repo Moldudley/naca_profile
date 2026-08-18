@@ -8,6 +8,7 @@
 
 - **NACA_number** (number)
 - **Cord_length** (number)
+- **number_of_points** (number)
 
 
 
